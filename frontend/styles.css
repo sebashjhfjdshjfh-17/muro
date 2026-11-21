@@ -1,0 +1,11 @@
+body { font-family: system-ui, sans-serif; background: #f4f6fa; color: #0f1722; margin: 0; }
+main { max-width: 620px; margin: 2rem auto; padding: 0 1rem; }
+section { background: #fff; border-radius: 12px; padding: 1rem 1.2rem; margin: 1rem 0; }
+h2 { font-size: 1.1rem; margin-top: 0; }
+form { display: flex; gap: .5rem; flex-wrap: wrap; }
+input { flex: 1; min-width: 130px; padding: .55rem; border: 2px solid #d9dfe9; border-radius: 8px; }
+button { background: #0f1722; color: #ffd23f; border: 0; border-radius: 8px; padding: .55rem 1rem; font-weight: 700; cursor: pointer; }
+.estado { padding: .5rem .8rem; border-radius: 8px; background: #fff6d6; }
+.estado.ok { background: #e3f4e8; } .estado.mal { background: #fdeceb; }
+.error { color: #b3261e; min-height: 1.2em; }
+ul { list-style: none; padding: 0; } li { padding: .4rem 0; border-bottom: 1px solid #eef1f6; }

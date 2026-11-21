@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muro de saludos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Muro de saludos</h1>
+    <p class="estado" id="estado" role="status">Comprobando la API…</p>
+
+    <section>
+      <h2>1. Pídele un saludo a la API</h2>
+      <form id="f-saludo">
+        <input id="nombre-s" placeholder="Tu nombre" maxlength="30" required>
+        <button>Saludar</button>
+      </form>
+      <p id="saludo" class="resp"></p>
+    </section>
+
+    <section>
+      <h2>2. Escribe en el muro</h2>
+      <form id="f-muro">
+        <input id="nombre-m" placeholder="Tu nombre" maxlength="30" required>
+        <input id="mensaje-m" placeholder="Tu mensaje" maxlength="140" required>
+        <button>Publicar</button>
+      </form>
+      <p id="error" class="error" role="alert"></p>
+      <ul id="lista"></ul>
+    </section>
+  </main>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Opcional: "Blueprint" de Render. Describe la API como codigo.
+services:
+  - type: web
+    name: muro-api
+    runtime: node
+    rootDir: api
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: ALLOWED_ORIGIN
+        sync: false   # lo escribes tu en el panel: la URL de tu frontend en Vercel
